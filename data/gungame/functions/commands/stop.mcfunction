@@ -9,6 +9,7 @@ scoreboard players set @a TimerMessage 1
 # Configure gameplay
 clear @a
 kill @e[type=item]
+team modify alive friendlyFire false
 
 # Effects
 effect give @a saturation 15

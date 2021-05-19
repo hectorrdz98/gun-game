@@ -1,4 +1,8 @@
 
+# Give effects
+effect give @s minecraft:saturation 99999 0 true
+effect give @s minecraft:regeneration 99999 0 true
+
 # Match kit with upgrade
 execute if score @s Upgrade matches 0 run function gungame:commands/alive_kits/kit1
 execute if score @s Upgrade matches 1 run function gungame:commands/alive_kits/kit2

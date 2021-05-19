@@ -1,8 +1,8 @@
 
 # Set everyone to team alive and to survival mode
 team join alive @a
-spreadplayers 0 100 0 50 false @a[team=alive]
-gamemode adventure @a[team=alive]
+gamemode adventure @a
+spreadplayers 0 0 100 100 false @a[team=alive]
 
 # Restart scoreboards
 scoreboard players set @a Timer 600
@@ -22,8 +22,8 @@ scoreboard objectives setdisplay list Upgrade
 clear @a
 kill @e[type=item]
 effect clear @a
-effect give @a saturation 15
 effect give @a instant_health 15
+team modify alive friendlyFire false
 time set 0
 
 # Effects

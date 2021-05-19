@@ -8,8 +8,9 @@ tellraw @a {"text": "By Sasukector", "bold": true, "italic": true, "color": "#B1
 clear @a
 kill @e[type=item]
 effect clear @a
-effect give @a saturation 15
 effect give @a instant_health 15
+gamerule naturalRegeneration false
+gamerule showDeathMessages false
 time set 0
 
 # Setup scoreboards
