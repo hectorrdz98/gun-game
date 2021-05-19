@@ -17,8 +17,10 @@ scoreboard objectives add Deaths deathCount
 scoreboard objectives add Kills playerKillCount
 scoreboard objectives add Life health
 scoreboard objectives setdisplay belowName Life
-scoreboard objectives add Timer health
-scoreboard objectives add TimerMessage health
+scoreboard objectives add Timer dummy
+scoreboard players set @a Timer 600
+scoreboard objectives add TimerMessage dummy
+scoreboard players set @a TimerMessage 1
 
 # Setup teams
 team remove alive
@@ -26,7 +28,6 @@ team add alive
 team modify alive friendlyFire false
 team modify alive color light_purple
 team modify alive prefix "[Playing] "
-team modify alive friendlyFire false
 
 team remove spectator
 team add spectator

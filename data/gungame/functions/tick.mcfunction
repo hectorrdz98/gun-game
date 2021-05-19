@@ -8,7 +8,7 @@ tellraw @a[scores={Timer=100}] {"text":"5 seconds for pvp...","color":"#B188B5",
 tellraw @a[scores={Timer=80}] {"text":"4 seconds for pvp...","color":"#B188B5","bold":true,"italic":true}
 tellraw @a[scores={Timer=60}] {"text":"3 seconds for pvp...","color":"#B188B5","bold":true,"italic":true}
 tellraw @a[scores={Timer=40}] {"text":"2 seconds for pvp...","color":"#B188B5","bold":true,"italic":true}
-tellraw @a[scores={Timer=20}] {"text":"1 seconds for pvp...","color":"#B188B5","bold":true,"italic":true}
+tellraw @a[scores={Timer=20}] {"text":"1 second for pvp...","color":"#B188B5","bold":true,"italic":true}
 tellraw @a[scores={Timer=0, TimerMessage=0}] {"text":"¡PvP started!","color":"#B188B5","bold":true,"italic":true}
 
 execute as @a[scores={Timer=200}] at @s run function gungame:effects/pvp_message
