@@ -13,3 +13,6 @@ execute as @s run function gungame:commands/give_kit
 
 # Update scores
 scoreboard players reset @s Kills
+
+# Effect
+playsound minecraft:block.note_block.bell ambient @s ~ ~ ~ 3 0.8 1
