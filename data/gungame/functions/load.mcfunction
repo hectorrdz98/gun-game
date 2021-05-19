@@ -14,6 +14,8 @@ time set 0
 
 # Setup scoreboards
 scoreboard objectives add Deaths deathCount
+scoreboard objectives add DeathMessage dummy
+scoreboard players set @a DeathMessage 0
 scoreboard objectives add Kills playerKillCount
 scoreboard objectives add Life health
 scoreboard objectives setdisplay belowName Life
@@ -21,6 +23,10 @@ scoreboard objectives add Timer dummy
 scoreboard players set @a Timer 600
 scoreboard objectives add TimerMessage dummy
 scoreboard players set @a TimerMessage 1
+scoreboard objectives add Upgrade dummy
+scoreboard players set @a Upgrade 0
+scoreboard objectives setdisplay sidebar Upgrade
+scoreboard objectives setdisplay list Upgrade
 
 # Setup teams
 team remove alive

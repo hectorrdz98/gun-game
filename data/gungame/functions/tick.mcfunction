@@ -22,8 +22,9 @@ execute as @a[scores={Timer=0, TimerMessage=0}] at @s run function gungame:effec
 scoreboard players set @a[scores={Timer=0}] TimerMessage 1
 
 # Alive events
-execute as @a[team=alive, scores={Deaths=1.., DeadRockets=0}] at @s run function gungame:commands/player_died
+execute as @a[team=alive, scores={Deaths=1.., DeathMessage=0}] at @s run function gungame:commands/player_died
 execute as @e[type=player, team=alive, scores={Deaths=1..}] at @s run function gungame:commands/player_respawned
+execute as @a[team=alive, scores={Kills=1..}] at @s run function gungame:commands/player_kill
 
 # Spectator events
 gamemode spectator @a[team=spectator]
